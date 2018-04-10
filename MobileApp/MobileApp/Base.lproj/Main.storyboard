@@ -32,6 +32,10 @@
                                     <constraint firstAttribute="width" secondItem="uUw-F2-sDJ" secondAttribute="height" multiplier="5:8" id="ipa-cV-FLc"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-1X-IQs">
+                                <rect key="frame" x="80" y="95" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -47,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="roadImage" destination="Z98-Wx-D0W" id="J5v-G8-Hv6"/>
+                        <outlet property="walkingImage" destination="7Gc-1X-IQs" id="0OE-2l-mjv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
