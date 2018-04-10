@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,13 +26,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-Wx-D0W">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
+                                <rect key="frame" x="42" y="370" width="50" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uUw-F2-sDJ" secondAttribute="height" multiplier="5:8" id="ipa-cV-FLc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Z98-Wx-D0W" secondAttribute="trailing" id="2em-ka-gTe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z98-Wx-D0W" secondAttribute="bottom" id="3qe-12-BH1"/>
                             <constraint firstItem="Z98-Wx-D0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7ZL-Qs-Xf0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uUw-F2-sDJ" secondAttribute="bottom" constant="118" id="9kO-KT-whs"/>
                             <constraint firstItem="Z98-Wx-D0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V00-Bo-O3r"/>
+                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="YqG-M2-gNf"/>
+                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="350" id="dge-HX-XUR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uUw-F2-sDJ" secondAttribute="trailing" constant="212" id="ghF-HU-Uu8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -42,4 +54,7 @@
             <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="car0.png" width="382" height="757"/>
+    </resources>
 </document>

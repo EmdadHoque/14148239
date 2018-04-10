@@ -34,6 +34,8 @@
 		855EC6A9207C558C003F8515 /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = 855EC695207C558C003F8515 /* road18.png */; };
 		855EC6AA207C558C003F8515 /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = 855EC696207C558C003F8515 /* road19.png */; };
 		855EC6AB207C558C003F8515 /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = 855EC697207C558C003F8515 /* road20.png */; };
+		85AA13DF207D1A1800161185 /* DraggedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA13DE207D1A1800161185 /* DraggedCarView.swift */; };
+		85AA13E1207D1AF600161185 /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13E0207D1AF600161185 /* car0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		855EC695207C558C003F8515 /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = images/road18.png; sourceTree = "<group>"; };
 		855EC696207C558C003F8515 /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = images/road19.png; sourceTree = "<group>"; };
 		855EC697207C558C003F8515 /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = images/road20.png; sourceTree = "<group>"; };
+		85AA13DE207D1A1800161185 /* DraggedCarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggedCarView.swift; path = ../../DraggedCarView.swift; sourceTree = "<group>"; };
+		85AA13E0207D1AF600161185 /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = images/car0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				855EC62E207C4FFA003F8515 /* AppDelegate.swift */,
 				855EC630207C4FFA003F8515 /* ViewController.swift */,
 				855EC632207C4FFA003F8515 /* Main.storyboard */,
+				85AA13E0207D1AF600161185 /* car0.png */,
+				85AA13DE207D1A1800161185 /* DraggedCarView.swift */,
 				855EC684207C558C003F8515 /* road1.png */,
 				855EC685207C558C003F8515 /* road2.png */,
 				855EC686207C558C003F8515 /* road3.png */,
@@ -309,6 +315,7 @@
 				855EC698207C558C003F8515 /* road1.png in Resources */,
 				855EC6A9207C558C003F8515 /* road18.png in Resources */,
 				855EC6A7207C558C003F8515 /* road16.png in Resources */,
+				85AA13E1207D1AF600161185 /* car0.png in Resources */,
 				855EC6AB207C558C003F8515 /* road20.png in Resources */,
 				855EC6A3207C558C003F8515 /* road12.png in Resources */,
 				855EC69E207C558C003F8515 /* road7.png in Resources */,
@@ -340,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				855EC631207C4FFA003F8515 /* ViewController.swift in Sources */,
+				85AA13DF207D1A1800161185 /* DraggedCarView.swift in Sources */,
 				855EC62F207C4FFA003F8515 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +593,7 @@
 				855EC655207C4FFB003F8515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		855EC656207C4FFB003F8515 /* Build configuration list for PBXNativeTarget "MobileAppTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +602,7 @@
 				855EC658207C4FFB003F8515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		855EC659207C4FFB003F8515 /* Build configuration list for PBXNativeTarget "MobileAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +611,7 @@
 				855EC65B207C4FFB003F8515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
