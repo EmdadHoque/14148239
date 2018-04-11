@@ -19,10 +19,35 @@ class ViewController: UIViewController {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 //////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //PROGRAMMATICALLY created UIViews
+        
+        // creates a new image view holder & assigns image
+        let carView2 = UIImageView(image: UIImage(named: "car1"))
+        
+        //assigns size and position to the image
+        carView2.frame = CGRect (x:50, y:100, width: 20, height: 40)
+        
+        carView2.alpha = 1
+        
+        //adds the image view to main view
+        self.view.addSubview(carView2)
+        
         
         
         // Animation for road
@@ -44,7 +69,8 @@ class ViewController: UIViewController {
         roadImage.animationImages = images
         roadImage.startAnimating()
         
-        //Animation of walking
+        
+        // Animation of walking
         var walkingArray: [UIImage]!
         
         walkingArray = [UIImage(named: "walking1")!,
@@ -63,15 +89,13 @@ class ViewController: UIViewController {
         
         walkingImage.image = UIImage.animatedImage(with: walkingArray, duration: 1)
         
-        walkingImage.backgroundColor = UIColor.clear
         
-        
-        
-        // Animation of walking across road
-        UIView.animate(withDuration: 2, delay: 4.0, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
+        //Animation of sun and balloon
+        UIView.animate(withDuration: 5, delay: 0.0, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
             {
                 
                 self.walkingImage.center.x += self.view.bounds.width
+                self.walkingImage.frame = CGRect (x:-250, y:200, width: 240, height: 128)
                 
         }, completion: nil
         )
@@ -79,16 +103,11 @@ class ViewController: UIViewController {
         
     }
     
-    
-//////////////////////////////////////////
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
-
-
 

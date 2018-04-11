@@ -26,27 +26,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-Wx-D0W">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
-                                <rect key="frame" x="42" y="370" width="50" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="uUw-F2-sDJ" secondAttribute="height" multiplier="5:8" id="ipa-cV-FLc"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-1X-IQs">
-                                <rect key="frame" x="80" y="95" width="240" height="128"/>
+                                <rect key="frame" x="80" y="200" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
+                                <rect key="frame" x="47" y="410" width="40" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uUw-F2-sDJ" secondAttribute="height" multiplier="1:2" id="N2K-x5-w1B"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Z98-Wx-D0W" secondAttribute="trailing" id="2em-ka-gTe"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z98-Wx-D0W" secondAttribute="bottom" id="3qe-12-BH1"/>
-                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7ZL-Qs-Xf0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uUw-F2-sDJ" secondAttribute="bottom" constant="118" id="9kO-KT-whs"/>
-                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V00-Bo-O3r"/>
-                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="YqG-M2-gNf"/>
-                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="350" id="dge-HX-XUR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uUw-F2-sDJ" secondAttribute="trailing" constant="212" id="ghF-HU-Uu8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uUw-F2-sDJ" secondAttribute="bottom" constant="69" id="05q-SK-PVb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z98-Wx-D0W" secondAttribute="bottom" id="2V4-ic-Yb1"/>
+                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="76o-r5-Y4f"/>
+                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ILd-4k-xms"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uUw-F2-sDJ" secondAttribute="trailing" constant="239" id="L1r-BC-ql0"/>
+                            <constraint firstAttribute="trailing" secondItem="Z98-Wx-D0W" secondAttribute="trailing" id="RZM-Pp-hhL"/>
+                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qfq-et-sjt"/>
                         </constraints>
                     </view>
                     <connections>
