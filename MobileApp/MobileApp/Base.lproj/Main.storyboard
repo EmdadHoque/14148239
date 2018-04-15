@@ -6,11 +6,63 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home Page-->
+        <scene sceneID="k6X-gh-d6z">
+            <objects>
+                <viewController id="Aux-Cy-yDp" customClass="HomePage" customModule="MobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vTT-v6-U15"/>
+                        <viewControllerLayoutGuide type="bottom" id="g1e-av-897"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Twc-hL-QSw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-XY-PIV">
+                                <rect key="frame" x="-6" y="-7" width="326" height="575"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6X6-bw-otR">
+                                <rect key="frame" x="33" y="244" width="254" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYF-Mo-kpY">
+                                <rect key="frame" x="119" y="324" width="82" height="35"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="READY">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="readyButton:" destination="Aux-Cy-yDp" eventType="touchUpInside" id="IF0-kf-97s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6X6-bw-otR" secondAttribute="trailing" constant="33" id="7Qt-7J-01D"/>
+                            <constraint firstAttribute="trailing" secondItem="fYF-Mo-kpY" secondAttribute="trailing" constant="119" id="Qv2-Fg-5cJ"/>
+                            <constraint firstItem="fYF-Mo-kpY" firstAttribute="leading" secondItem="Twc-hL-QSw" secondAttribute="leading" constant="119" id="d38-wc-dDt"/>
+                            <constraint firstItem="6X6-bw-otR" firstAttribute="leading" secondItem="Twc-hL-QSw" secondAttribute="leading" constant="33" id="gE6-9P-OWa"/>
+                            <constraint firstItem="g1e-av-897" firstAttribute="top" secondItem="fYF-Mo-kpY" secondAttribute="bottom" constant="209" id="iOC-1x-YSk"/>
+                            <constraint firstItem="6X6-bw-otR" firstAttribute="top" secondItem="vTT-v6-U15" secondAttribute="bottom" constant="224" id="nzA-I4-2jG"/>
+                            <constraint firstItem="fYF-Mo-kpY" firstAttribute="top" secondItem="6X6-bw-otR" secondAttribute="bottom" constant="50" id="xlk-fg-iQQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IIT-sU-M1U"/>
+                    <connections>
+                        <outlet property="nameText" destination="6X6-bw-otR" id="tYJ-c9-1Vz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8z-JP-Tq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="123.59154929577466"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -30,35 +82,143 @@
                                 <rect key="frame" x="80" y="200" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
-                                <rect key="frame" x="47" y="410" width="40" height="80"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
+                                <rect key="frame" x="29" y="416" width="40" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="uUw-F2-sDJ" secondAttribute="height" multiplier="1:2" id="N2K-x5-w1B"/>
+                                    <constraint firstAttribute="width" constant="40" id="02r-XU-ZYR"/>
+                                    <constraint firstAttribute="height" constant="70" id="vEG-70-68c"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASR-aL-6gW">
+                                <rect key="frame" x="50" y="-200" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car1.png" translatesAutoresizingMaskIntoConstraints="NO" id="rci-SC-5Oy">
+                                <rect key="frame" x="60" y="500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Lw-sz-Re8">
+                                <rect key="frame" x="100" y="500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car2.png" translatesAutoresizingMaskIntoConstraints="NO" id="WLd-49-gvj">
+                                <rect key="frame" x="100" y="-1000" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car3.png" translatesAutoresizingMaskIntoConstraints="NO" id="y2Z-7d-OeG">
+                                <rect key="frame" x="125" y="-1000" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car3.png" translatesAutoresizingMaskIntoConstraints="NO" id="hju-LE-zRF">
+                                <rect key="frame" x="75" y="-200" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car3.png" translatesAutoresizingMaskIntoConstraints="NO" id="zra-f8-UCU">
+                                <rect key="frame" x="200" y="-500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car4.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHq-ws-YvU">
+                                <rect key="frame" x="225" y="-200" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car4.png" translatesAutoresizingMaskIntoConstraints="NO" id="fQe-Ef-5qQ">
+                                <rect key="frame" x="250" y="-200" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car4.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOM-3E-arv">
+                                <rect key="frame" x="296" y="39" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car5.png" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-4h-vJW">
+                                <rect key="frame" x="100" y="600" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car5.png" translatesAutoresizingMaskIntoConstraints="NO" id="xwM-mA-RC5">
+                                <rect key="frame" x="49" y="500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car5.png" translatesAutoresizingMaskIntoConstraints="NO" id="PEr-h7-tBq">
+                                <rect key="frame" x="200" y="500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car6.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Dj-qg-wbQ">
+                                <rect key="frame" x="175" y="-500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car6.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dri-vF-k3h">
+                                <rect key="frame" x="185" y="800" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car6.png" translatesAutoresizingMaskIntoConstraints="NO" id="ach-ru-YQl">
+                                <rect key="frame" x="200" y="400" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car6.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fof-nO-3ak">
+                                <rect key="frame" x="50" y="300" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car6.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xt5-Ke-cHw">
+                                <rect key="frame" x="50" y="500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car6.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-d3-rfI">
+                                <rect key="frame" x="200" y="500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car1.png" translatesAutoresizingMaskIntoConstraints="NO" id="acI-MK-crz">
+                                <rect key="frame" x="75" y="500" width="25" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uUw-F2-sDJ" secondAttribute="bottom" constant="69" id="05q-SK-PVb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z98-Wx-D0W" secondAttribute="bottom" id="2V4-ic-Yb1"/>
-                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="76o-r5-Y4f"/>
-                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ILd-4k-xms"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uUw-F2-sDJ" secondAttribute="trailing" constant="239" id="L1r-BC-ql0"/>
-                            <constraint firstAttribute="trailing" secondItem="Z98-Wx-D0W" secondAttribute="trailing" id="RZM-Pp-hhL"/>
-                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qfq-et-sjt"/>
+                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="2gZ-Ro-qmt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z98-Wx-D0W" secondAttribute="bottom" id="8CI-bY-hV9"/>
+                            <constraint firstAttribute="trailing" secondItem="Z98-Wx-D0W" secondAttribute="trailing" id="Q3S-cX-808"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uUw-F2-sDJ" secondAttribute="bottom" constant="82" id="Uwm-t3-KME"/>
+                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dtH-RJ-yzM"/>
+                            <constraint firstItem="Z98-Wx-D0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mi5-Ap-1SS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="carView0" destination="uUw-F2-sDJ" id="AbQ-QR-77G"/>
+                        <outlet property="carView1" destination="ASR-aL-6gW" id="U4I-rp-Bvo"/>
+                        <outlet property="carView10" destination="fQe-Ef-5qQ" id="eFt-R5-nbo"/>
+                        <outlet property="carView11" destination="pOM-3E-arv" id="6g9-BN-6jx"/>
+                        <outlet property="carView12" destination="HrG-4h-vJW" id="Xtv-Qs-Mku"/>
+                        <outlet property="carView13" destination="xwM-mA-RC5" id="gla-JP-pcJ"/>
+                        <outlet property="carView14" destination="PEr-h7-tBq" id="oaM-WE-nih"/>
+                        <outlet property="carView15" destination="5Dj-qg-wbQ" id="J2V-C9-Ap2"/>
+                        <outlet property="carView16" destination="Dri-vF-k3h" id="AvK-5a-3aZ"/>
+                        <outlet property="carView17" destination="ach-ru-YQl" id="t0o-gW-6ZV"/>
+                        <outlet property="carView18" destination="Fof-nO-3ak" id="Nka-OR-2N3"/>
+                        <outlet property="carView19" destination="Xt5-Ke-cHw" id="ogT-IT-y5x"/>
+                        <outlet property="carView2" destination="acI-MK-crz" id="dqT-ts-I2w"/>
+                        <outlet property="carView20" destination="Pd2-d3-rfI" id="v5F-Ce-Jdi"/>
+                        <outlet property="carView3" destination="rci-SC-5Oy" id="dE1-bh-u1Y"/>
+                        <outlet property="carView4" destination="3Lw-sz-Re8" id="Vu8-05-K6M"/>
+                        <outlet property="carView5" destination="WLd-49-gvj" id="BEr-HC-9ah"/>
+                        <outlet property="carView6" destination="y2Z-7d-OeG" id="Vhy-Nl-A2S"/>
+                        <outlet property="carView7" destination="hju-LE-zRF" id="wRe-1a-LXp"/>
+                        <outlet property="carView8" destination="zra-f8-UCU" id="Ro2-Gp-Yn4"/>
+                        <outlet property="carView9" destination="DHq-ws-YvU" id="2xO-9l-qeB"/>
                         <outlet property="roadImage" destination="Z98-Wx-D0W" id="J5v-G8-Hv6"/>
                         <outlet property="walkingImage" destination="7Gc-1X-IQs" id="0OE-2l-mjv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
+            <point key="canvasLocation" x="1091.25" y="123.59154929577466"/>
         </scene>
     </scenes>
     <resources>
         <image name="car0.png" width="382" height="757"/>
+        <image name="car1.png" width="411" height="830"/>
+        <image name="car2.png" width="300" height="600"/>
+        <image name="car3.png" width="397" height="800"/>
+        <image name="car4.png" width="322" height="600"/>
+        <image name="car5.png" width="397" height="800"/>
+        <image name="car6.png" width="595" height="1200"/>
+        <image name="homepage.png" width="2550" height="3300"/>
     </resources>
 </document>

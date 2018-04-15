@@ -35,6 +35,8 @@
 		855EC6AA207C558C003F8515 /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = 855EC696207C558C003F8515 /* road19.png */; };
 		855EC6AB207C558C003F8515 /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = 855EC697207C558C003F8515 /* road20.png */; };
 		85759AAF207D8265006E3EC7 /* car1.png in Resources */ = {isa = PBXBuildFile; fileRef = 85759AAE207D8265006E3EC7 /* car1.png */; };
+		85820EC4207FE11C0007D53E /* homepage.png in Resources */ = {isa = PBXBuildFile; fileRef = 85820EC3207FE11C0007D53E /* homepage.png */; };
+		85820EC8208006C50007D53E /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85820EC7208006C50007D53E /* HomePage.swift */; };
 		85AA13E1207D1AF600161185 /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13E0207D1AF600161185 /* car0.png */; };
 		85AA13EF207D22FA00161185 /* walking1.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13E2207D22FA00161185 /* walking1.png */; };
 		85AA13F0207D22FA00161185 /* walking2.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13E3207D22FA00161185 /* walking2.png */; };
@@ -50,6 +52,11 @@
 		85AA13FA207D22FA00161185 /* walking12.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13ED207D22FA00161185 /* walking12.png */; };
 		85AA13FB207D22FA00161185 /* walking13.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13EE207D22FA00161185 /* walking13.png */; };
 		85AA13FD207D25FA00161185 /* DraggedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA13FC207D25FA00161185 /* DraggedCarView.swift */; };
+		85D5277A208134BD000F9397 /* car2.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D52775208134BD000F9397 /* car2.png */; };
+		85D5277B208134BD000F9397 /* car3.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D52776208134BD000F9397 /* car3.png */; };
+		85D5277C208134BD000F9397 /* car4.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D52777208134BD000F9397 /* car4.png */; };
+		85D5277D208134BD000F9397 /* car5.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D52778208134BD000F9397 /* car5.png */; };
+		85D5277E208134BD000F9397 /* car6.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D52779208134BD000F9397 /* car6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +111,8 @@
 		855EC696207C558C003F8515 /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = images/road19.png; sourceTree = "<group>"; };
 		855EC697207C558C003F8515 /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = images/road20.png; sourceTree = "<group>"; };
 		85759AAE207D8265006E3EC7 /* car1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car1.png; path = images/car1.png; sourceTree = "<group>"; };
+		85820EC3207FE11C0007D53E /* homepage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homepage.png; path = carpics/homepage.png; sourceTree = "<group>"; };
+		85820EC7208006C50007D53E /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		85AA13E0207D1AF600161185 /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = images/car0.png; sourceTree = "<group>"; };
 		85AA13E2207D22FA00161185 /* walking1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = walking1.png; path = images/walking1.png; sourceTree = "<group>"; };
 		85AA13E3207D22FA00161185 /* walking2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = walking2.png; path = images/walking2.png; sourceTree = "<group>"; };
@@ -119,6 +128,11 @@
 		85AA13ED207D22FA00161185 /* walking12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = walking12.png; path = images/walking12.png; sourceTree = "<group>"; };
 		85AA13EE207D22FA00161185 /* walking13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = walking13.png; path = images/walking13.png; sourceTree = "<group>"; };
 		85AA13FC207D25FA00161185 /* DraggedCarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggedCarView.swift; sourceTree = "<group>"; };
+		85D52775208134BD000F9397 /* car2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car2.png; path = images/car2.png; sourceTree = "<group>"; };
+		85D52776208134BD000F9397 /* car3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car3.png; path = images/car3.png; sourceTree = "<group>"; };
+		85D52777208134BD000F9397 /* car4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car4.png; path = images/car4.png; sourceTree = "<group>"; };
+		85D52778208134BD000F9397 /* car5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car5.png; path = images/car5.png; sourceTree = "<group>"; };
+		85D52779208134BD000F9397 /* car6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car6.png; path = images/car6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,11 +183,19 @@
 		855EC62D207C4FFA003F8515 /* MobileApp */ = {
 			isa = PBXGroup;
 			children = (
+				85820EC7208006C50007D53E /* HomePage.swift */,
 				855EC62E207C4FFA003F8515 /* AppDelegate.swift */,
 				85AA13FC207D25FA00161185 /* DraggedCarView.swift */,
 				855EC630207C4FFA003F8515 /* ViewController.swift */,
-				85759AAE207D8265006E3EC7 /* car1.png */,
 				855EC632207C4FFA003F8515 /* Main.storyboard */,
+				85820EC3207FE11C0007D53E /* homepage.png */,
+				85AA13E0207D1AF600161185 /* car0.png */,
+				85759AAE207D8265006E3EC7 /* car1.png */,
+				85D52775208134BD000F9397 /* car2.png */,
+				85D52776208134BD000F9397 /* car3.png */,
+				85D52777208134BD000F9397 /* car4.png */,
+				85D52778208134BD000F9397 /* car5.png */,
+				85D52779208134BD000F9397 /* car6.png */,
 				85AA13E2207D22FA00161185 /* walking1.png */,
 				85AA13E3207D22FA00161185 /* walking2.png */,
 				85AA13E4207D22FA00161185 /* walking3.png */,
@@ -187,7 +209,6 @@
 				85AA13EC207D22FA00161185 /* walking11.png */,
 				85AA13ED207D22FA00161185 /* walking12.png */,
 				85AA13EE207D22FA00161185 /* walking13.png */,
-				85AA13E0207D1AF600161185 /* car0.png */,
 				855EC684207C558C003F8515 /* road1.png */,
 				855EC685207C558C003F8515 /* road2.png */,
 				855EC686207C558C003F8515 /* road3.png */,
@@ -301,7 +322,7 @@
 				TargetAttributes = {
 					855EC62A207C4FFA003F8515 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					855EC63E207C4FFB003F8515 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -344,6 +365,7 @@
 				855EC639207C4FFA003F8515 /* LaunchScreen.storyboard in Resources */,
 				855EC636207C4FFA003F8515 /* Assets.xcassets in Resources */,
 				855EC699207C558C003F8515 /* road2.png in Resources */,
+				85D5277B208134BD000F9397 /* car3.png in Resources */,
 				85AA13F6207D22FA00161185 /* walking8.png in Resources */,
 				85AA13F5207D22FA00161185 /* walking7.png in Resources */,
 				855EC6A0207C558C003F8515 /* road9.png in Resources */,
@@ -351,14 +373,17 @@
 				855EC69D207C558C003F8515 /* road6.png in Resources */,
 				855EC69A207C558C003F8515 /* road3.png in Resources */,
 				855EC6A1207C558C003F8515 /* road10.png in Resources */,
+				85D5277A208134BD000F9397 /* car2.png in Resources */,
 				855EC6A4207C558C003F8515 /* road13.png in Resources */,
 				85759AAF207D8265006E3EC7 /* car1.png in Resources */,
 				855EC6A2207C558C003F8515 /* road11.png in Resources */,
 				85AA13F9207D22FA00161185 /* walking11.png in Resources */,
+				85D5277C208134BD000F9397 /* car4.png in Resources */,
 				85AA13F1207D22FA00161185 /* walking3.png in Resources */,
 				855EC634207C4FFA003F8515 /* Main.storyboard in Resources */,
 				85AA13FA207D22FA00161185 /* walking12.png in Resources */,
 				855EC6A8207C558C003F8515 /* road17.png in Resources */,
+				85820EC4207FE11C0007D53E /* homepage.png in Resources */,
 				85AA13F8207D22FA00161185 /* walking10.png in Resources */,
 				85AA13FB207D22FA00161185 /* walking13.png in Resources */,
 				855EC69F207C558C003F8515 /* road8.png in Resources */,
@@ -367,6 +392,7 @@
 				855EC698207C558C003F8515 /* road1.png in Resources */,
 				855EC6A9207C558C003F8515 /* road18.png in Resources */,
 				855EC6A7207C558C003F8515 /* road16.png in Resources */,
+				85D5277E208134BD000F9397 /* car6.png in Resources */,
 				85AA13F4207D22FA00161185 /* walking6.png in Resources */,
 				85AA13F2207D22FA00161185 /* walking4.png in Resources */,
 				85AA13F3207D22FA00161185 /* walking5.png in Resources */,
@@ -374,6 +400,7 @@
 				855EC6AB207C558C003F8515 /* road20.png in Resources */,
 				855EC6A3207C558C003F8515 /* road12.png in Resources */,
 				855EC69E207C558C003F8515 /* road7.png in Resources */,
+				85D5277D208134BD000F9397 /* car5.png in Resources */,
 				85AA13F7207D22FA00161185 /* walking9.png in Resources */,
 				855EC69B207C558C003F8515 /* road4.png in Resources */,
 				855EC69C207C558C003F8515 /* road5.png in Resources */,
@@ -405,6 +432,7 @@
 				855EC631207C4FFA003F8515 /* ViewController.swift in Sources */,
 				85AA13FD207D25FA00161185 /* DraggedCarView.swift in Sources */,
 				855EC62F207C4FFA003F8515 /* AppDelegate.swift in Sources */,
+				85820EC8208006C50007D53E /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -544,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -556,10 +584,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobileApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-4148239.MobileApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -568,10 +598,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobileApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-4148239.MobileApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

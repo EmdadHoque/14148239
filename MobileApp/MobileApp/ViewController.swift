@@ -11,15 +11,57 @@ import UIKit
 //////////////////////////////////////////
 class ViewController: UIViewController {
     
+    var dynamicAnimator: UIDynamicAnimator!
+    var dynamicItemBehavior: UIDynamicItemBehavior!
+    var collisionBehavior: UICollisionBehavior!
+    var collisionBehavior1: UICollisionBehavior!
+    var gravityBehavior: UIGravityBehavior!
+
     
     // ROAD image view
     @IBOutlet var roadImage: UIImageView!
     // WALKING image view
     @IBOutlet var walkingImage: UIImageView!
+    // CAR0 image view
+    @IBOutlet weak var carView0: DraggedCarView!
+    
+    // BLUE CAR1-CAR3 image view
+    @IBOutlet weak var carView1: UIImageView!
+    @IBOutlet weak var carView2: UIImageView!
+    @IBOutlet weak var carView3: UIImageView!
+    
+    // RED CAR4-CAR5 image view
+    @IBOutlet weak var carView4: UIImageView!
+    @IBOutlet weak var carView5: UIImageView!
+    
+    // CYAN CAR6-CAR8 image view
+    @IBOutlet weak var carView6: UIImageView!
+    @IBOutlet weak var carView7: UIImageView!
+    @IBOutlet weak var carView8: UIImageView!
+    
+    // YELLOW CAR9-CAR11 image view
+    @IBOutlet weak var carView9: UIImageView!
+    @IBOutlet weak var carView10: UIImageView!
+    @IBOutlet weak var carView11: UIImageView!
+    
+    // ORANGE CAR12-CAR14 image view
+    @IBOutlet weak var carView12: UIImageView!
+    @IBOutlet weak var carView13: UIImageView!
+    @IBOutlet weak var carView14: UIImageView!
+    
+    // GREEN CAR15-CAR20 image view
+    @IBOutlet weak var carView15: UIImageView!
+    @IBOutlet weak var carView16: UIImageView!
+    @IBOutlet weak var carView17: UIImageView!
+    @IBOutlet weak var carView18: UIImageView!
+    @IBOutlet weak var carView19: UIImageView!
+    @IBOutlet weak var carView20: UIImageView!
     
     
     
+   
     
+ 
     
     
     
@@ -32,23 +74,76 @@ class ViewController: UIViewController {
 //////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+    
         // Do any additional setup after loading the view, typically from a nib.
         
         
         //PROGRAMMATICALLY created UIViews
         
-        // creates a new image view holder & assigns image
-        let carView2 = UIImageView(image: UIImage(named: "car1"))
+        let randomNumber1 = arc4random_uniform(99) + 100
+        let randomNumber2 = arc4random_uniform(99) + 100
+        let randomNumber3 = arc4random_uniform(99) + 100
+        let randomNumber4 = arc4random_uniform(99) + 100
+        let randomNumber5 = arc4random_uniform(99) + 100
+        let randomNumber6 = arc4random_uniform(99) + 100
+        let randomNumber7 = arc4random_uniform(99) + 100
+        let randomNumber8 = arc4random_uniform(99) + 100
+        let randomNumber9 = arc4random_uniform(99) + 100
+        let randomNumber10 = arc4random_uniform(99) + 100
+        let randomNumber11 = arc4random_uniform(99) + 100
+        let randomNumber12 = arc4random_uniform(99) + 100
+        let randomNumber13 = arc4random_uniform(99) + 100
+        let randomNumber14 = arc4random_uniform(99) + 100
+        let randomNumber15 = arc4random_uniform(99) + 100
+        let randomNumber16 = arc4random_uniform(99) + 100
+        let randomNumber17 = arc4random_uniform(99) + 100
+        let randomNumber18 = arc4random_uniform(99) + 100
+        let randomNumber19 = arc4random_uniform(99) + 100
+        let randomNumber20 = arc4random_uniform(99) + 100
         
-        //assigns size and position to the image
-        carView2.frame = CGRect (x:50, y:100, width: 20, height: 40)
+
+        // Animation for cars
         
-        carView2.alpha = 1
+        dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
+    
         
-        //adds the image view to main view
-        self.view.addSubview(carView2)
+    
         
+        collisionBehavior = UICollisionBehavior(items: [carView1, carView2, carView3, carView4, carView5, carView6, carView7, carView8, carView9, carView10, carView11, carView12, carView13, carView14, carView15, carView16, carView17, carView18, carView19, carView20])
+        collisionBehavior.translatesReferenceBoundsIntoBoundary = false
+        dynamicAnimator.addBehavior(collisionBehavior)
+       
         
+        dynamicItemBehavior = UIDynamicItemBehavior(items: [carView1, carView2, carView3, carView4, carView5, carView6, carView7, carView8, carView9, carView10, carView11, carView12, carView13, carView14, carView15, carView16, carView17, carView18, carView19, carView20])
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber1)), for: carView1)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber2)), for: carView2)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber3)), for: carView3)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber4)), for: carView4)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber5)), for: carView5)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber6)), for: carView6)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber7)), for: carView7)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber8)), for: carView8)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber9)), for: carView9)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber10)), for: carView10)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber11)), for: carView11)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber12)), for: carView12)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber13)), for: carView13)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber14)), for: carView14)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber15)), for: carView15)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber16)), for: carView16)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber17)), for: carView17)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber18)), for: carView18)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber19)), for: carView19)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber20)), for: carView20)
+        dynamicAnimator.addBehavior(dynamicItemBehavior)
+        
+
+        
+       
+       
         
         // Animation for road
     var imagesNames = ["road1", "road2",
@@ -90,8 +185,8 @@ class ViewController: UIViewController {
         walkingImage.image = UIImage.animatedImage(with: walkingArray, duration: 1)
         
         
-        //Animation of sun and balloon
-        UIView.animate(withDuration: 5, delay: 0.0, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
+        //Animation of walking across street
+        UIView.animate(withDuration: 8, delay: 4, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
             {
                 
                 self.walkingImage.center.x += self.view.bounds.width
