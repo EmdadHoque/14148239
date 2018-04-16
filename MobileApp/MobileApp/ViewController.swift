@@ -8,8 +8,20 @@
 
 import UIKit
 
+protocol subviewDelegate {
+    func changeSomething()
+}
+
+
 //////////////////////////////////////////
-class ViewController: UIViewController {
+class ViewController: UIViewController, subviewDelegate {
+    func changeSomething() {
+        collisionBehavior.addBoundary(withIdentifier: "barrier" as
+            NSCopying, for: UIBezierPath(rect: carView0.frame))
+    }
+
+    
+  
     
     var dynamicAnimator: UIDynamicAnimator!
     var dynamicItemBehavior: UIDynamicItemBehavior!
@@ -22,6 +34,10 @@ class ViewController: UIViewController {
     @IBOutlet var roadImage: UIImageView!
     // WALKING image view
     @IBOutlet var walkingImage: UIImageView!
+    @IBOutlet weak var walkingImage2: UIImageView!
+    
+    
+    
     // CAR0 image view
     @IBOutlet weak var carView0: DraggedCarView!
     
@@ -76,33 +92,33 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
+        carView0.myDelegate = self
     
         // Do any additional setup after loading the view, typically from a nib.
         
         
         //PROGRAMMATICALLY created UIViews
         
-        let randomNumber1 = arc4random_uniform(99) + 100
-        let randomNumber2 = arc4random_uniform(99) + 100
-        let randomNumber3 = arc4random_uniform(99) + 100
-        let randomNumber4 = arc4random_uniform(99) + 100
-        let randomNumber5 = arc4random_uniform(99) + 100
-        let randomNumber6 = arc4random_uniform(99) + 100
-        let randomNumber7 = arc4random_uniform(99) + 100
-        let randomNumber8 = arc4random_uniform(99) + 100
-        let randomNumber9 = arc4random_uniform(99) + 100
-        let randomNumber10 = arc4random_uniform(99) + 100
-        let randomNumber11 = arc4random_uniform(99) + 100
-        let randomNumber12 = arc4random_uniform(99) + 100
-        let randomNumber13 = arc4random_uniform(99) + 100
-        let randomNumber14 = arc4random_uniform(99) + 100
-        let randomNumber15 = arc4random_uniform(99) + 100
-        let randomNumber16 = arc4random_uniform(99) + 100
-        let randomNumber17 = arc4random_uniform(99) + 100
-        let randomNumber18 = arc4random_uniform(99) + 100
-        let randomNumber19 = arc4random_uniform(99) + 100
-        let randomNumber20 = arc4random_uniform(99) + 100
+        let randomNumber1 = arc4random_uniform(75) + 200
+        let randomNumber2 = arc4random_uniform(75) + 200
+        let randomNumber3 = arc4random_uniform(75) + 200
+        let randomNumber4 = arc4random_uniform(75) + 200
+        let randomNumber5 = arc4random_uniform(75) + 200
+        let randomNumber6 = arc4random_uniform(75) + 200
+        let randomNumber7 = arc4random_uniform(75) + 200
+        let randomNumber8 = arc4random_uniform(75) + 200
+        let randomNumber9 = arc4random_uniform(75) + 200
+        let randomNumber10 = arc4random_uniform(75) + 200
+        let randomNumber11 = arc4random_uniform(75) + 200
+        let randomNumber12 = arc4random_uniform(75) + 200
+        let randomNumber13 = arc4random_uniform(75) + 200
+        let randomNumber14 = arc4random_uniform(75) + 200
+        let randomNumber15 = arc4random_uniform(75) + 200
+        let randomNumber16 = arc4random_uniform(75) + 200
+        let randomNumber17 = arc4random_uniform(75) + 200
+        let randomNumber18 = arc4random_uniform(75) + 200
+        let randomNumber19 = arc4random_uniform(75) + 200
+        let randomNumber20 = arc4random_uniform(75) + 200
         
 
         // Animation for cars
@@ -194,6 +210,37 @@ class ViewController: UIViewController {
                 
         }, completion: nil
         )
+        
+        // Animation of walking
+        var walkingArrayy: [UIImage]!
+        
+        walkingArrayy = [UIImage(named: "walking1")!,
+                        UIImage(named: "walking2")!,
+                        UIImage(named: "walking3")!,
+                        UIImage(named: "walking4")!,
+                        UIImage(named: "walking5")!,
+                        UIImage(named: "walking6")!,
+                        UIImage(named: "walking7")!,
+                        UIImage(named: "walking8")!,
+                        UIImage(named: "walking9")!,
+                        UIImage(named: "walking10")!,
+                        UIImage(named: "walking11")!,
+                        UIImage(named: "walking12")!,
+                        UIImage(named: "walking13")!]
+        
+        walkingImage2.image = UIImage.animatedImage(with: walkingArrayy, duration: 1)
+        
+        
+        //Animation of walking across street
+        UIView.animate(withDuration: 10, delay: 4, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
+            {
+                
+                self.walkingImage2.center.x += self.view.bounds.width
+                self.walkingImage2.frame = CGRect (x:-400, y:400, width: 240, height: 128)
+                
+        }, completion: nil
+        )
+
         
         
     }
