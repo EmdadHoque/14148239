@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		851B6FCF208412B6005BC582 /* GameOverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B6FCE208412B6005BC582 /* GameOverPage.swift */; };
 		851B6FD220842647005BC582 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 851B6FD020842647005BC582 /* home.png */; };
 		851B6FD320842647005BC582 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 851B6FD120842647005BC582 /* play.png */; };
 		85560D6920840D1A008B4AF7 /* replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 85560D6820840D1A008B4AF7 /* replay.png */; };
@@ -42,6 +41,7 @@
 		85759AAF207D8265006E3EC7 /* car1.png in Resources */ = {isa = PBXBuildFile; fileRef = 85759AAE207D8265006E3EC7 /* car1.png */; };
 		85820EC4207FE11C0007D53E /* homepage.png in Resources */ = {isa = PBXBuildFile; fileRef = 85820EC3207FE11C0007D53E /* homepage.png */; };
 		85820EC8208006C50007D53E /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85820EC7208006C50007D53E /* HomePage.swift */; };
+		85A1A4F720854A3D003032D3 /* GameOverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A1A4F620854A3D003032D3 /* GameOverPage.swift */; };
 		85AA13E1207D1AF600161185 /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13E0207D1AF600161185 /* car0.png */; };
 		85AA13EF207D22FA00161185 /* walking1.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13E2207D22FA00161185 /* walking1.png */; };
 		85AA13F0207D22FA00161185 /* walking2.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA13E3207D22FA00161185 /* walking2.png */; };
@@ -82,7 +82,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		851B6FCE208412B6005BC582 /* GameOverPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverPage.swift; path = ../GameOverPage.swift; sourceTree = "<group>"; };
 		851B6FD020842647005BC582 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = images/home.png; sourceTree = "<group>"; };
 		851B6FD120842647005BC582 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = images/play.png; sourceTree = "<group>"; };
 		85560D6820840D1A008B4AF7 /* replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = replay.png; path = images/replay.png; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		85759AAE207D8265006E3EC7 /* car1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car1.png; path = images/car1.png; sourceTree = "<group>"; };
 		85820EC3207FE11C0007D53E /* homepage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homepage.png; path = carpics/homepage.png; sourceTree = "<group>"; };
 		85820EC7208006C50007D53E /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		85A1A4F620854A3D003032D3 /* GameOverPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverPage.swift; sourceTree = "<group>"; };
 		85AA13E0207D1AF600161185 /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = images/car0.png; sourceTree = "<group>"; };
 		85AA13E2207D22FA00161185 /* walking1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = walking1.png; path = images/walking1.png; sourceTree = "<group>"; };
 		85AA13E3207D22FA00161185 /* walking2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = walking2.png; path = images/walking2.png; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		855EC62D207C4FFA003F8515 /* MobileApp */ = {
 			isa = PBXGroup;
 			children = (
-				851B6FCE208412B6005BC582 /* GameOverPage.swift */,
+				85A1A4F620854A3D003032D3 /* GameOverPage.swift */,
 				85820EC7208006C50007D53E /* HomePage.swift */,
 				855EC62E207C4FFA003F8515 /* AppDelegate.swift */,
 				85AA13FC207D25FA00161185 /* DraggedCarView.swift */,
@@ -452,7 +452,7 @@
 				85AA13FD207D25FA00161185 /* DraggedCarView.swift in Sources */,
 				855EC62F207C4FFA003F8515 /* AppDelegate.swift in Sources */,
 				85820EC8208006C50007D53E /* HomePage.swift in Sources */,
-				851B6FCF208412B6005BC582 /* GameOverPage.swift in Sources */,
+				85A1A4F720854A3D003032D3 /* GameOverPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

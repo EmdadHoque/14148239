@@ -20,6 +20,8 @@ class ViewController: UIViewController, subviewDelegate {
             NSCopying, for: UIBezierPath(rect: carView0.frame))
     }
 
+    let gameover = UIImageView(image: nil)
+    
     
   
     
@@ -29,6 +31,7 @@ class ViewController: UIViewController, subviewDelegate {
     var collisionBehavior1: UICollisionBehavior!
     var gravityBehavior: UIGravityBehavior!
 
+    
     
     // ROAD image view
     @IBOutlet var roadImage: UIImageView!
@@ -43,35 +46,25 @@ class ViewController: UIViewController, subviewDelegate {
     
     // BLUE CAR1-CAR3 image view
     @IBOutlet weak var carView1: UIImageView!
-    @IBOutlet weak var carView2: UIImageView!
-    @IBOutlet weak var carView3: UIImageView!
+    
+    
+  
     
     // RED CAR4-CAR5 image view
-    @IBOutlet weak var carView4: UIImageView!
-    @IBOutlet weak var carView5: UIImageView!
+    @IBOutlet weak var carView2: UIImageView!
+
     
     // CYAN CAR6-CAR8 image view
-    @IBOutlet weak var carView6: UIImageView!
-    @IBOutlet weak var carView7: UIImageView!
-    @IBOutlet weak var carView8: UIImageView!
+  
     
     // YELLOW CAR9-CAR11 image view
-    @IBOutlet weak var carView9: UIImageView!
-    @IBOutlet weak var carView10: UIImageView!
-    @IBOutlet weak var carView11: UIImageView!
+  
     
     // ORANGE CAR12-CAR14 image view
-    @IBOutlet weak var carView12: UIImageView!
-    @IBOutlet weak var carView13: UIImageView!
-    @IBOutlet weak var carView14: UIImageView!
+    
     
     // GREEN CAR15-CAR20 image view
-    @IBOutlet weak var carView15: UIImageView!
-    @IBOutlet weak var carView16: UIImageView!
-    @IBOutlet weak var carView17: UIImageView!
-    @IBOutlet weak var carView18: UIImageView!
-    @IBOutlet weak var carView19: UIImageView!
-    @IBOutlet weak var carView20: UIImageView!
+  
     
     
     
@@ -99,61 +92,33 @@ class ViewController: UIViewController, subviewDelegate {
         
         //PROGRAMMATICALLY created UIViews
         
-        let randomNumber1 = arc4random_uniform(75) + 200
-        let randomNumber2 = arc4random_uniform(75) + 200
-        let randomNumber3 = arc4random_uniform(75) + 200
-        let randomNumber4 = arc4random_uniform(75) + 200
-        let randomNumber5 = arc4random_uniform(75) + 200
-        let randomNumber6 = arc4random_uniform(75) + 200
-        let randomNumber7 = arc4random_uniform(75) + 200
-        let randomNumber8 = arc4random_uniform(75) + 200
-        let randomNumber9 = arc4random_uniform(75) + 200
-        let randomNumber10 = arc4random_uniform(75) + 200
-        let randomNumber11 = arc4random_uniform(75) + 200
-        let randomNumber12 = arc4random_uniform(75) + 200
-        let randomNumber13 = arc4random_uniform(75) + 200
-        let randomNumber14 = arc4random_uniform(75) + 200
-        let randomNumber15 = arc4random_uniform(75) + 200
-        let randomNumber16 = arc4random_uniform(75) + 200
-        let randomNumber17 = arc4random_uniform(75) + 200
-        let randomNumber18 = arc4random_uniform(75) + 200
-        let randomNumber19 = arc4random_uniform(75) + 200
-        let randomNumber20 = arc4random_uniform(75) + 200
+    
+        
+        
+        let randomNumber1 = arc4random_uniform(0) + 200 // speed y
+        let randomNumberx1 = arc4random_uniform(198) + 40  // location x
+        self.carView1.frame = CGRect (x: Int(randomNumberx1), y: -200, width: 25, height: 50)
+        
+        
+        let randomNumberx2 = arc4random_uniform(198) + 40  // location x
+        self.carView2.frame = CGRect (x: Int(randomNumberx2), y: -200, width: 25, height: 50)
+        
         
 
         // Animation for cars
         
         dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
-    
-        
-    
-        
-        collisionBehavior = UICollisionBehavior(items: [carView1, carView2, carView3, carView4, carView5, carView6, carView7, carView8, carView9, carView10, carView11, carView12, carView13, carView14, carView15, carView16, carView17, carView18, carView19, carView20])
+        collisionBehavior = UICollisionBehavior(items: [carView1, carView2])
         collisionBehavior.translatesReferenceBoundsIntoBoundary = false
         dynamicAnimator.addBehavior(collisionBehavior)
-       
+        dynamicItemBehavior = UIDynamicItemBehavior(items: [carView1, carView2])
         
-        dynamicItemBehavior = UIDynamicItemBehavior(items: [carView1, carView2, carView3, carView4, carView5, carView6, carView7, carView8, carView9, carView10, carView11, carView12, carView13, carView14, carView15, carView16, carView17, carView18, carView19, carView20])
+        
+        
         self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber1)), for: carView1)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber2)), for: carView2)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber3)), for: carView3)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber4)), for: carView4)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber5)), for: carView5)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber6)), for: carView6)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber7)), for: carView7)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber8)), for: carView8)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber9)), for: carView9)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber10)), for: carView10)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber11)), for: carView11)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber12)), for: carView12)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber13)), for: carView13)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber14)), for: carView14)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber15)), for: carView15)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber16)), for: carView16)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber17)), for: carView17)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber18)), for: carView18)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber19)), for: carView19)
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber20)), for: carView20)
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: Int(randomNumber1)), for: carView2)
+        
+      
         dynamicAnimator.addBehavior(dynamicItemBehavior)
         
 
@@ -241,15 +206,32 @@ class ViewController: UIViewController, subviewDelegate {
         }, completion: nil
         )
 
+        let when = DispatchTime.now()+10
         
+        DispatchQueue.main.asyncAfter(deadline: when)
+        {
+            
+            
+            self.gameover.image = UIImage(named:"game_over.png")
+            self.gameover.frame = UIScreen.main.bounds
+            self.view.addSubview(self.gameover)
+            self.view.bringSubview(toFront: self.gameover)
+            
+            
+            
+           
+           
+            
+        }
+        }
         
-    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
+
+
 
