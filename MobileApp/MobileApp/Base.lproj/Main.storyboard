@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1314" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1314" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QO5-L4-EeJ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,63 +10,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Page-->
-        <scene sceneID="k6X-gh-d6z">
+        <!--View Controller-->
+        <scene sceneID="Wxa-QF-Bsn">
             <objects>
-                <viewController id="Aux-Cy-yDp" customClass="HomePage" customModule="MobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QO5-L4-EeJ" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vTT-v6-U15"/>
-                        <viewControllerLayoutGuide type="bottom" id="g1e-av-897"/>
+                        <viewControllerLayoutGuide type="top" id="wlV-iH-mur"/>
+                        <viewControllerLayoutGuide type="bottom" id="kth-pO-0Pg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Twc-hL-QSw">
+                    <view key="view" contentMode="scaleToFill" id="Xys-NX-R6f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-XY-PIV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="C0d-wP-ffL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6X6-bw-otR">
-                                <rect key="frame" x="33" y="244" width="254" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xL3-Ox-d5J">
+                                <rect key="frame" x="33" y="269" width="255" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYF-Mo-kpY">
-                                <rect key="frame" x="119" y="324" width="82" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTW-3p-nOc">
+                                <rect key="frame" x="123" y="338" width="75" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="Uhm-iD-hnO"/>
+                                    <constraint firstAttribute="width" constant="75" id="Ob5-gq-tJC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
                                 <state key="normal" title="READY">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="readyButton:" destination="Aux-Cy-yDp" eventType="touchUpInside" id="IF0-kf-97s"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="hzV-3G-Elw"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="1uU-7W-kyy"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="I1u-XY-PIV" firstAttribute="top" secondItem="Twc-hL-QSw" secondAttribute="top" id="3Ti-fx-Xmi"/>
-                            <constraint firstItem="6X6-bw-otR" firstAttribute="leading" secondItem="Twc-hL-QSw" secondAttribute="leadingMargin" constant="17" id="CFU-hN-zXk"/>
-                            <constraint firstItem="6X6-bw-otR" firstAttribute="centerX" secondItem="fYF-Mo-kpY" secondAttribute="centerX" id="Ere-v9-tsE"/>
-                            <constraint firstItem="I1u-XY-PIV" firstAttribute="leading" secondItem="Twc-hL-QSw" secondAttribute="leading" id="G4V-s9-ee0"/>
-                            <constraint firstAttribute="trailing" secondItem="I1u-XY-PIV" secondAttribute="trailing" id="KNP-8M-WUv"/>
-                            <constraint firstItem="fYF-Mo-kpY" firstAttribute="top" secondItem="6X6-bw-otR" secondAttribute="bottom" constant="50" id="TGy-26-cYX"/>
-                            <constraint firstItem="g1e-av-897" firstAttribute="top" secondItem="fYF-Mo-kpY" secondAttribute="bottom" constant="209" id="eju-68-7vX"/>
-                            <constraint firstItem="6X6-bw-otR" firstAttribute="centerX" secondItem="I1u-XY-PIV" secondAttribute="centerX" id="mEW-aW-cXW"/>
-                            <constraint firstItem="g1e-av-897" firstAttribute="top" secondItem="I1u-XY-PIV" secondAttribute="bottom" id="rCK-as-2bH"/>
+                            <constraint firstItem="mTW-3p-nOc" firstAttribute="top" secondItem="xL3-Ox-d5J" secondAttribute="bottom" constant="39" id="4ds-ZL-zpG"/>
+                            <constraint firstItem="C0d-wP-ffL" firstAttribute="bottom" secondItem="kth-pO-0Pg" secondAttribute="top" id="9TU-jV-9KW"/>
+                            <constraint firstItem="C0d-wP-ffL" firstAttribute="leading" secondItem="Xys-NX-R6f" secondAttribute="leading" id="Hff-oT-an0"/>
+                            <constraint firstItem="C0d-wP-ffL" firstAttribute="top" secondItem="Xys-NX-R6f" secondAttribute="top" id="KQv-1R-vL0"/>
+                            <constraint firstItem="C0d-wP-ffL" firstAttribute="centerY" secondItem="xL3-Ox-d5J" secondAttribute="centerY" id="SzT-S2-lh5"/>
+                            <constraint firstItem="xL3-Ox-d5J" firstAttribute="centerX" secondItem="mTW-3p-nOc" secondAttribute="centerX" id="lfe-wU-Ggn"/>
+                            <constraint firstItem="xL3-Ox-d5J" firstAttribute="leading" secondItem="Xys-NX-R6f" secondAttribute="leadingMargin" constant="17" id="tKq-P9-lI4"/>
+                            <constraint firstAttribute="trailing" secondItem="C0d-wP-ffL" secondAttribute="trailing" id="yYh-Su-vjI"/>
+                            <constraint firstItem="C0d-wP-ffL" firstAttribute="centerX" secondItem="xL3-Ox-d5J" secondAttribute="centerX" id="yoM-hL-euS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IIT-sU-M1U"/>
-                    <connections>
-                        <outlet property="nameText" destination="6X6-bw-otR" id="tYJ-c9-1Vz"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P8z-JP-Tq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aww-9p-e4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="270" y="123.59154929577466"/>
+            <point key="canvasLocation" x="322.5" y="123.59154929577466"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -91,36 +86,21 @@
                                 <rect key="frame" x="80" y="400" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
                                 <rect key="frame" x="29" y="416" width="40" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="02r-XU-ZYR"/>
-                                    <constraint firstAttribute="height" constant="70" id="vEG-70-68c"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASR-aL-6gW">
-                                <rect key="frame" x="30" y="0.0" width="25" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car2.png" translatesAutoresizingMaskIntoConstraints="NO" id="kjy-m6-2IZ">
-                                <rect key="frame" x="60" y="0.0" width="25" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uUw-F2-sDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="2gZ-Ro-qmt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z98-Wx-D0W" secondAttribute="bottom" id="8CI-bY-hV9"/>
                             <constraint firstAttribute="trailing" secondItem="Z98-Wx-D0W" secondAttribute="trailing" id="Q3S-cX-808"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uUw-F2-sDJ" secondAttribute="bottom" constant="82" id="Uwm-t3-KME"/>
                             <constraint firstItem="Z98-Wx-D0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dtH-RJ-yzM"/>
                             <constraint firstItem="Z98-Wx-D0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mi5-Ap-1SS"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="carView0" destination="uUw-F2-sDJ" id="AbQ-QR-77G"/>
-                        <outlet property="carView1" destination="ASR-aL-6gW" id="5IY-iR-3Gg"/>
-                        <outlet property="carView2" destination="kjy-m6-2IZ" id="NBc-Oj-6ol"/>
                         <outlet property="roadImage" destination="Z98-Wx-D0W" id="J5v-G8-Hv6"/>
                         <outlet property="walkingImage" destination="7Gc-1X-IQs" id="0OE-2l-mjv"/>
                         <outlet property="walkingImage2" destination="3zs-vg-xna" id="rT7-tc-kvf"/>
@@ -130,11 +110,39 @@
             </objects>
             <point key="canvasLocation" x="1091.25" y="123.59154929577466"/>
         </scene>
+        <!--Game Over Page-->
+        <scene sceneID="zXr-wc-b4S">
+            <objects>
+                <viewController storyboardIdentifier="gameOverScreen" id="Smk-QM-IfW" customClass="GameOverPage" customModule="MobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PgO-Ab-6nZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bOM-El-DQY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fC8-vn-v5T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_over.png" translatesAutoresizingMaskIntoConstraints="NO" id="BIC-Ue-cnr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BIC-Ue-cnr" secondAttribute="trailing" id="71j-tw-NVV"/>
+                            <constraint firstItem="BIC-Ue-cnr" firstAttribute="leading" secondItem="fC8-vn-v5T" secondAttribute="leading" id="IaV-A6-zCP"/>
+                            <constraint firstItem="BIC-Ue-cnr" firstAttribute="top" secondItem="fC8-vn-v5T" secondAttribute="top" id="hgn-wy-Aqi"/>
+                            <constraint firstItem="bOM-El-DQY" firstAttribute="top" secondItem="BIC-Ue-cnr" secondAttribute="bottom" id="lMA-d6-vY7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxl-MX-tqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884.375" y="123.59154929577466"/>
+        </scene>
     </scenes>
     <resources>
         <image name="car0.png" width="382" height="757"/>
-        <image name="car1.png" width="411" height="830"/>
-        <image name="car2.png" width="300" height="600"/>
+        <image name="game_over.png" width="10512" height="13583"/>
         <image name="homepage.png" width="2550" height="3300"/>
     </resources>
 </document>
