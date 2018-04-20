@@ -78,14 +78,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-Wx-D0W">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-1X-IQs">
-                                <rect key="frame" x="80" y="200" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-vg-xna">
-                                <rect key="frame" x="80" y="400" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-F2-sDJ" customClass="DraggedCarView" customModule="MobileApp" customModuleProvider="target">
                                 <rect key="frame" x="29" y="416" width="40" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -102,8 +94,6 @@
                     <connections>
                         <outlet property="carView0" destination="uUw-F2-sDJ" id="AbQ-QR-77G"/>
                         <outlet property="roadImage" destination="Z98-Wx-D0W" id="J5v-G8-Hv6"/>
-                        <outlet property="walkingImage" destination="7Gc-1X-IQs" id="0OE-2l-mjv"/>
-                        <outlet property="walkingImage2" destination="3zs-vg-xna" id="rT7-tc-kvf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,13 +115,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_over.png" translatesAutoresizingMaskIntoConstraints="NO" id="BIC-Ue-cnr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjC-g9-d3X">
+                                <rect key="frame" x="57" y="368" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3CU-Ej-2g2"/>
+                                    <constraint firstAttribute="width" constant="100" id="IDE-wh-1ng"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="homeButton.png"/>
+                                <connections>
+                                    <segue destination="QO5-L4-EeJ" kind="presentation" modalTransitionStyle="crossDissolve" id="R21-Rl-K6F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhu-dh-OzH">
+                                <rect key="frame" x="177" y="368" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="replayButton.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="coverVertical" id="RGS-g5-66k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="BIC-Ue-cnr" secondAttribute="trailing" id="71j-tw-NVV"/>
-                            <constraint firstItem="BIC-Ue-cnr" firstAttribute="leading" secondItem="fC8-vn-v5T" secondAttribute="leading" id="IaV-A6-zCP"/>
-                            <constraint firstItem="BIC-Ue-cnr" firstAttribute="top" secondItem="fC8-vn-v5T" secondAttribute="top" id="hgn-wy-Aqi"/>
-                            <constraint firstItem="bOM-El-DQY" firstAttribute="top" secondItem="BIC-Ue-cnr" secondAttribute="bottom" id="lMA-d6-vY7"/>
+                            <constraint firstItem="BIC-Ue-cnr" firstAttribute="top" secondItem="fC8-vn-v5T" secondAttribute="top" id="9kf-rf-rYG"/>
+                            <constraint firstItem="IjC-g9-d3X" firstAttribute="top" secondItem="PgO-Ab-6nZ" secondAttribute="bottom" constant="348" id="CaZ-vm-AXg"/>
+                            <constraint firstItem="bOM-El-DQY" firstAttribute="top" secondItem="BIC-Ue-cnr" secondAttribute="bottom" id="aWc-3d-ebB"/>
+                            <constraint firstItem="BIC-Ue-cnr" firstAttribute="leading" secondItem="fC8-vn-v5T" secondAttribute="leading" id="aid-TS-ZJC"/>
+                            <constraint firstAttribute="trailing" secondItem="BIC-Ue-cnr" secondAttribute="trailing" id="pBa-cS-puc"/>
+                            <constraint firstItem="bOM-El-DQY" firstAttribute="top" secondItem="IjC-g9-d3X" secondAttribute="bottom" constant="100" id="rSN-Qm-FAF"/>
+                            <constraint firstItem="IjC-g9-d3X" firstAttribute="leading" secondItem="fC8-vn-v5T" secondAttribute="leadingMargin" constant="41" id="yo5-BE-rg9"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -143,6 +155,11 @@
     <resources>
         <image name="car0.png" width="382" height="757"/>
         <image name="game_over.png" width="10512" height="13583"/>
+        <image name="homeButton.png" width="894" height="894"/>
         <image name="homepage.png" width="2550" height="3300"/>
+        <image name="replayButton.png" width="894" height="894"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="RGS-g5-66k"/>
+    </inferredMetricsTieBreakers>
 </document>

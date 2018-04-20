@@ -11,6 +11,9 @@
 		85586C88208921A800D8DE00 /* homepage.png in Resources */ = {isa = PBXBuildFile; fileRef = 85586C87208921A800D8DE00 /* homepage.png */; };
 		85586C8C2089264800D8DE00 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 85586C8B2089264800D8DE00 /* home.png */; };
 		855D124D2089486700BFE51F /* playnav.png in Resources */ = {isa = PBXBuildFile; fileRef = 855D124C2089486700BFE51F /* playnav.png */; };
+		855D125020895C9700BFE51F /* homeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 855D124E20895C9700BFE51F /* homeButton.png */; };
+		855D125120895C9700BFE51F /* replayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 855D124F20895C9700BFE51F /* replayButton.png */; };
+		855D125620896C4B00BFE51F /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 855D125520896C4B00BFE51F /* music.mp3 */; };
 		855EC62F207C4FFA003F8515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855EC62E207C4FFA003F8515 /* AppDelegate.swift */; };
 		855EC631207C4FFA003F8515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855EC630207C4FFA003F8515 /* ViewController.swift */; };
 		855EC634207C4FFA003F8515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855EC632207C4FFA003F8515 /* Main.storyboard */; };
@@ -85,6 +88,9 @@
 		85586C87208921A800D8DE00 /* homepage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homepage.png; path = images/homepage.png; sourceTree = "<group>"; };
 		85586C8B2089264800D8DE00 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = images/home.png; sourceTree = "<group>"; };
 		855D124C2089486700BFE51F /* playnav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playnav.png; path = images/playnav.png; sourceTree = "<group>"; };
+		855D124E20895C9700BFE51F /* homeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homeButton.png; path = images/homeButton.png; sourceTree = "<group>"; };
+		855D124F20895C9700BFE51F /* replayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = replayButton.png; path = images/replayButton.png; sourceTree = "<group>"; };
+		855D125520896C4B00BFE51F /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = audio/music.mp3; sourceTree = "<group>"; };
 		855EC62B207C4FFA003F8515 /* MobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855EC62E207C4FFA003F8515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855EC630207C4FFA003F8515 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		855D125220896BD300BFE51F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				855D125520896C4B00BFE51F /* music.mp3 */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
 		855EC622207C4FFA003F8515 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +211,9 @@
 				85AA13FC207D25FA00161185 /* DraggedCarView.swift */,
 				855EC630207C4FFA003F8515 /* ViewController.swift */,
 				855EC632207C4FFA003F8515 /* Main.storyboard */,
+				855D124E20895C9700BFE51F /* homeButton.png */,
+				855D125220896BD300BFE51F /* Audio */,
+				855D124F20895C9700BFE51F /* replayButton.png */,
 				855D124C2089486700BFE51F /* playnav.png */,
 				85586C8B2089264800D8DE00 /* home.png */,
 				85560D6A20840EDD008B4AF7 /* game_over.png */,
@@ -394,7 +411,9 @@
 				85AA13F9207D22FA00161185 /* walking11.png in Resources */,
 				85D5277C208134BD000F9397 /* car4.png in Resources */,
 				85AA13F1207D22FA00161185 /* walking3.png in Resources */,
+				855D125120895C9700BFE51F /* replayButton.png in Resources */,
 				855EC634207C4FFA003F8515 /* Main.storyboard in Resources */,
+				855D125020895C9700BFE51F /* homeButton.png in Resources */,
 				85AA13FA207D22FA00161185 /* walking12.png in Resources */,
 				855EC6A8207C558C003F8515 /* road17.png in Resources */,
 				85AA13F8207D22FA00161185 /* walking10.png in Resources */,
@@ -411,6 +430,7 @@
 				85AA13F2207D22FA00161185 /* walking4.png in Resources */,
 				85AA13F3207D22FA00161185 /* walking5.png in Resources */,
 				85AA13E1207D1AF600161185 /* car0.png in Resources */,
+				855D125620896C4B00BFE51F /* music.mp3 in Resources */,
 				855EC6AB207C558C003F8515 /* road20.png in Resources */,
 				855EC6A3207C558C003F8515 /* road12.png in Resources */,
 				855EC69E207C558C003F8515 /* road7.png in Resources */,

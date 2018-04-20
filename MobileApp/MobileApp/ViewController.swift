@@ -98,67 +98,7 @@ class ViewController: UIViewController, subviewDelegate {
         roadImage.animationImages = images
         roadImage.startAnimating()
         
-        
-        // Animation of walking
-        var walkingArray: [UIImage]!
-        
-        walkingArray = [UIImage(named: "walking1")!,
-                      UIImage(named: "walking2")!,
-                      UIImage(named: "walking3")!,
-                      UIImage(named: "walking4")!,
-                      UIImage(named: "walking5")!,
-                      UIImage(named: "walking6")!,
-                      UIImage(named: "walking7")!,
-                      UIImage(named: "walking8")!,
-                      UIImage(named: "walking9")!,
-                      UIImage(named: "walking10")!,
-                      UIImage(named: "walking11")!,
-                      UIImage(named: "walking12")!,
-                      UIImage(named: "walking13")!]
-        
-        walkingImage.image = UIImage.animatedImage(with: walkingArray, duration: 1)
-        
-        
-        //Animation of walking across street
-        UIView.animate(withDuration: 8, delay: 4, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
-            {
-                
-                self.walkingImage.center.x += self.view.bounds.width
-                self.walkingImage.frame = CGRect (x:-250, y:200, width: 240, height: 128)
-                
-        }, completion: nil
-        )
-        
-        // Animation of walking
-        var walkingArrayy: [UIImage]!
-        
-        walkingArrayy = [UIImage(named: "walking1")!,
-                        UIImage(named: "walking2")!,
-                        UIImage(named: "walking3")!,
-                        UIImage(named: "walking4")!,
-                        UIImage(named: "walking5")!,
-                        UIImage(named: "walking6")!,
-                        UIImage(named: "walking7")!,
-                        UIImage(named: "walking8")!,
-                        UIImage(named: "walking9")!,
-                        UIImage(named: "walking10")!,
-                        UIImage(named: "walking11")!,
-                        UIImage(named: "walking12")!,
-                        UIImage(named: "walking13")!]
-        
-        walkingImage2.image = UIImage.animatedImage(with: walkingArrayy, duration: 1)
-        
-        
-        //Animation of walking across street
-        UIView.animate(withDuration: 10, delay: 4, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
-            {
-                
-                self.walkingImage2.center.x += self.view.bounds.width
-                self.walkingImage2.frame = CGRect (x:-400, y:400, width: 240, height: 128)
-                
-        }, completion: nil
-        )
-
+       
         let when = DispatchTime.now()+10
         
         DispatchQueue.main.asyncAfter(deadline: when)
@@ -213,8 +153,8 @@ class ViewController: UIViewController, subviewDelegate {
                 
                 // Falling Cars
                 
-                let randomN2 = arc4random_uniform(75) + 200
-                let randomN3 = arc4random_uniform(100) + 500
+               
+                let randomN3 = arc4random_uniform(100) + 300
                 
                 
                 self.dynamicItemBehavior.addItem(RandomCar)
@@ -229,7 +169,7 @@ class ViewController: UIViewController, subviewDelegate {
                 self.dynamicItemBehavior.elasticity = 0-1
             }
             
-            let when = DispatchTime.now() + 5
+            let when = DispatchTime.now() + 20
             
             DispatchQueue.main.asyncAfter(deadline: when) {
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "gameOverScreen") as! GameOverPage

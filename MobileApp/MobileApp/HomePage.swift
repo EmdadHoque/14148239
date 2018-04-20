@@ -13,7 +13,7 @@ class HomePage: UIViewController {
     
     @IBOutlet weak var nameText: UITextField!
     
-    @IBAction func readyButton(_ sender: Any) {
+    @IBAction func readyButton(sender: Any) {
     }
     
     
